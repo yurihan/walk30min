@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="locationTableViewCell" rowHeight="67" id="CN0-8I-YG0" customClass="LocationTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="locationTableViewCell" tableViewCell="CN0-8I-YG0" id="8DD-Bc-UFY">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" id="bwy-cE-XH3">
+                        <rect key="frame" x="2" y="18" width="72" height="35"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <attributedString key="attributedText">
+                            <fragment content="3.14">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.12549019607843137" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="28" name="AppleSDGothicNeo-Bold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" paragraphSpacing="20" paragraphSpacingBefore="20"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ANB-LX-prO">
+                        <rect key="frame" x="76" y="26" width="34" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.12549019610000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="파이파이파이" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" id="4lr-AL-RSI">
+                        <rect key="frame" x="116" y="10" width="150" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                        <color key="textColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.49999999999999961" contentMode="scaleToFill" id="MTu-wo-01H">
+                        <rect key="frame" x="0.0" y="66" width="320" height="1"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.68235294117647061" green="0.67843137254901964" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="distance" destination="bwy-cE-XH3" id="oNf-qc-gM1"/>
+                <outlet property="name" destination="4lr-AL-RSI" id="7uU-ZF-IlE"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

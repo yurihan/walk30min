@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController">
+            <connections>
+                <outlet property="address" destination="TGA-p0-EXv" id="D1X-4B-7u3"/>
+                <outlet property="btnImg1" destination="fjf-J5-Jbk" id="hYY-JU-edH"/>
+                <outlet property="btnImg2" destination="ZCd-7d-jl0" id="P6K-dg-SW8"/>
+                <outlet property="btnImg3" destination="Bkh-Tc-cuL" id="9O6-m0-CtH"/>
+                <outlet property="btnImg4" destination="ny3-2r-FZI" id="sdI-hP-hn3"/>
+                <outlet property="btnImg5" destination="gJY-n2-NYj" id="1X5-Ux-mrz"/>
+                <outlet property="contentsView" destination="8i7-6I-z80" id="wHo-vc-78a"/>
+                <outlet property="distance" destination="KdI-eP-tYE" id="woS-mp-7Ob"/>
+                <outlet property="imageScrollView" destination="KFL-xs-h2I" id="n9a-gD-opz"/>
+                <outlet property="likeCounter" destination="fe6-6k-lAd" id="ePu-E5-cWr"/>
+                <outlet property="mainScrollView" destination="okT-wz-X4r" id="wTu-Vo-bpT"/>
+                <outlet property="portalTableView" destination="btw-B2-AYs" id="sFR-Iu-Y4H"/>
+                <outlet property="reviewCounter" destination="7wz-Ji-0cg" id="Iga-dc-sDn"/>
+                <outlet property="reviewTableView" destination="EOr-yg-dOu" id="Hvn-4o-IaD"/>
+                <outlet property="rwv" destination="1jP-Ya-CmT" id="ama-np-2B4"/>
+                <outlet property="searchBackImg" destination="9ND-e6-2lz" id="alb-57-NUB"/>
+                <outlet property="searchView" destination="4JX-QU-hbo" id="Nun-DW-BfM"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="okT-wz-X4r">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <view contentMode="scaleToFill" id="8i7-6I-z80">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="970"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="KFL-xs-h2I">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="MkS-YR-g3a"/>
+                    </connections>
+                </scrollView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Detail_img_back.png" id="hC3-a8-0bU">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <button opaque="NO" tag="2" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Bkh-Tc-cuL">
+                    <rect key="frame" x="155" y="224" width="11" height="11"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="Detail_img_off.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="imagePaging:" destination="-1" eventType="touchUpInside" id="A70-QX-zpy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZCd-7d-jl0">
+                    <rect key="frame" x="136" y="224" width="11" height="11"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="Detail_img_off.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="imagePaging:" destination="-1" eventType="touchUpInside" id="6oc-9C-1v9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ny3-2r-FZI">
+                    <rect key="frame" x="174" y="224" width="11" height="11"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="Detail_img_off.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="imagePaging:" destination="-1" eventType="touchUpInside" id="eSF-yY-VFz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fjf-J5-Jbk">
+                    <rect key="frame" x="117" y="224" width="11" height="11"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="Detail_img_on.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="imagePaging:" destination="-1" eventType="touchUpInside" id="1pC-T4-8yy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gJY-n2-NYj">
+                    <rect key="frame" x="193" y="224" width="11" height="11"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="Detail_img_off.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="imagePaging:" destination="-1" eventType="touchUpInside" id="ZoG-ua-ee7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Eje-5s-MSd">
+                    <rect key="frame" x="9" y="243" width="302" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="Detail_good_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="like:" destination="-1" eventType="touchUpInside" id="2aP-ba-SdS"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fe6-6k-lAd">
+                    <rect key="frame" x="253" y="264" width="47" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" id="KdI-eP-tYE">
+                    <rect key="frame" x="273" y="17" width="34" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <attributedString key="attributedText">
+                        <fragment content="3.14">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="16" name="AppleSDGothicNeo-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0099999997764825821"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PFa-hk-iGF">
+                    <rect key="frame" x="9" y="297" width="147" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="Detail_waysearch_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="viewPosition:" destination="-1" eventType="touchUpInside" id="ZFb-h0-db6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gaa-6p-cdo">
+                    <rect key="frame" x="164" y="297" width="147" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="Detail_review_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="review:" destination="-1" eventType="touchUpInside" id="ijD-jw-aLN"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Detail_Review_bar.png" id="t5b-B1-m3u">
+                    <rect key="frame" x="9" y="357" width="302" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="4JX-QU-hbo">
+                    <rect key="frame" x="0.0" y="615" width="320" height="355"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Detail_naver_bar.png" id="9ND-e6-2lz">
+                            <rect key="frame" x="9" y="8" width="302" height="42"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="knz-s1-XbZ">
+                            <rect key="frame" x="9" y="11" width="152" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="searchEngine:" destination="-1" eventType="touchUpInside" id="6O5-Hj-pjG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lQT-Fs-tJI">
+                            <rect key="frame" x="159" y="11" width="152" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="searchEngine:" destination="-1" eventType="touchUpInside" id="QDr-uf-YRj"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="btw-B2-AYs">
+                            <rect key="frame" x="5" y="55" width="311" height="300"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Brj-Bv-OaF"/>
+                                <outlet property="delegate" destination="-1" id="qHZ-pi-MfA"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울 서대문구 연희동" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" id="TGA-p0-EXv">
+                    <rect key="frame" x="9" y="4" width="248" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="EOr-yg-dOu">
+                    <rect key="frame" x="5" y="407" width="311" height="200"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="E3P-eE-8x5"/>
+                        <outlet property="delegate" destination="-1" id="UDk-xs-23o"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7wz-Ji-0cg">
+                    <rect key="frame" x="55" y="369" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" red="1" green="0.12549019610000001" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+        <view contentMode="scaleToFill" id="1jP-Ya-CmT" customClass="ReviewWriteView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.39999999999999963" contentMode="scaleToFill" id="gog-0m-yY1">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="NV2-r5-xoU">
+                    <rect key="frame" x="0.0" y="38" width="320" height="210"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Review_back.png" id="Nij-Al-8qT">
+                            <rect key="frame" x="5" y="0.0" width="311" height="210"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hVd-7x-ZbD">
+                            <rect key="frame" x="16" y="11" width="35" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="Review_x_btn.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cancel:" destination="1jP-Ya-CmT" eventType="touchUpInside" id="8KY-5y-OHQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="J9q-Jg-X9f">
+                            <rect key="frame" x="16" y="166" width="35" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="Review_facebook_off.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="Review_facebook_on.png"/>
+                            <connections>
+                                <action selector="sns:" destination="1jP-Ya-CmT" eventType="touchUpInside" id="30b-VU-1m0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3dW-0a-kLu">
+                            <rect key="frame" x="59" y="166" width="35" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="Review_twitter_off.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="Review_twitter_on.png"/>
+                            <connections>
+                                <action selector="sns:" destination="1jP-Ya-CmT" eventType="touchUpInside" id="dAx-6E-xm7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XPx-H1-9e0">
+                            <rect key="frame" x="102" y="166" width="35" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="Review_kakao_off.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="Review_kakao_on.png"/>
+                            <connections>
+                                <action selector="sns:" destination="1jP-Ya-CmT" eventType="touchUpInside" id="LcP-jc-elU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KLP-56-3Or">
+                            <rect key="frame" x="269" y="11" width="35" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="Review_ok_btn.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="send:" destination="1jP-Ya-CmT" eventType="touchUpInside" id="Uaf-Df-Sgy"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="VCc-hh-f2z">
+                            <rect key="frame" x="14" y="50" width="195" height="110"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="1jP-Ya-CmT" id="RAu-lc-ddV"/>
+                            </connections>
+                        </textView>
+                        <view alpha="0.49999999999999961" contentMode="scaleToFill" id="mch-zI-vdX">
+                            <rect key="frame" x="11" y="50" width="300" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view alpha="0.49999999999999961" contentMode="scaleToFill" id="gBO-G0-2Mf">
+                            <rect key="frame" x="11" y="159" width="300" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="t22-si-cYT">
+                            <rect key="frame" x="211" y="55" width="97" height="97"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" backgroundImage="Review_photo.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="picture:" destination="1jP-Ya-CmT" eventType="touchUpInside" id="mJ2-vQ-SIx"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/60" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ro6-a0-weP">
+                            <rect key="frame" x="161" y="136" width="42" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="boxView" destination="NV2-r5-xoU" id="h4m-c9-KQS"/>
+                <outlet property="btnFackbook" destination="J9q-Jg-X9f" id="aVX-r0-MLM"/>
+                <outlet property="btnKakao" destination="XPx-H1-9e0" id="DAt-eU-Yaq"/>
+                <outlet property="btnPicture" destination="t22-si-cYT" id="PEc-Yv-niW"/>
+                <outlet property="btnTwitter" destination="3dW-0a-kLu" id="hXL-kC-Wtw"/>
+                <outlet property="reviewText" destination="VCc-hh-f2z" id="MlJ-NA-SRG"/>
+                <outlet property="textCounter" destination="ro6-a0-weP" id="ODQ-dV-LOe"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Detail_Review_bar.png" width="604" height="84"/>
+        <image name="Detail_good_btn.png" width="604" height="93"/>
+        <image name="Detail_img_back.png" width="640" height="122"/>
+        <image name="Detail_img_off.png" width="7" height="7"/>
+        <image name="Detail_img_on.png" width="11" height="11"/>
+        <image name="Detail_naver_bar.png" width="604" height="84"/>
+        <image name="Detail_review_btn.png" width="294" height="92"/>
+        <image name="Detail_waysearch_btn.png" width="294" height="92"/>
+        <image name="Review_back.png" width="622" height="420"/>
+        <image name="Review_facebook_off.png" width="70" height="68"/>
+        <image name="Review_facebook_on.png" width="70" height="68"/>
+        <image name="Review_kakao_off.png" width="70" height="68"/>
+        <image name="Review_kakao_on.png" width="70" height="68"/>
+        <image name="Review_ok_btn.png" width="70" height="70"/>
+        <image name="Review_photo.png" width="194" height="194"/>
+        <image name="Review_twitter_off.png" width="70" height="68"/>
+        <image name="Review_twitter_on.png" width="70" height="68"/>
+        <image name="Review_x_btn.png" width="70" height="70"/>
+    </resources>
+</document>

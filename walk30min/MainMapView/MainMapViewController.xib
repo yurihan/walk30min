@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainMapViewController">
+            <connections>
+                <outlet property="slider" destination="Khs-Z1-9cp" id="zhM-gM-Vby"/>
+                <outlet property="sliderLeft" destination="a8X-ZR-d37" id="hFv-DN-qrV"/>
+                <outlet property="sliderRight" destination="aHp-qU-ZT2" id="Mgt-A8-UG8"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="GEP-lp-F25">
+                    <rect key="frame" x="132" y="497" width="56" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="Home_list_icon.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="list:" destination="-1" eventType="touchUpInside" id="R0Z-29-rbt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="gek-dI-fcV">
+                    <rect key="frame" x="254" y="497" width="56" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="Home_info_icon.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="info:" destination="-1" eventType="touchUpInside" id="yrP-S6-Is8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="LIj-VP-ZIP">
+                    <rect key="frame" x="10" y="497" width="56" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="Home_mylocation_icon.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="myPos:" destination="-1" eventType="touchUpInside" id="nkI-iL-2uJ"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_Top_back.png" id="ePG-PD-Ro0">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_Top_progress_left.png" id="acM-L1-ov5">
+                    <rect key="frame" x="20" y="38" width="3" height="8"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_Top_progress_right.png" id="X5u-ki-PDV">
+                    <rect key="frame" x="297" y="38" width="3" height="8"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_Top_progress_center_left.png" id="a8X-ZR-d37">
+                    <rect key="frame" x="23" y="38" width="8" height="8"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_Top_progress_center_right.png" id="aHp-qU-ZT2">
+                    <rect key="frame" x="31" y="38" width="266" height="8"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="Khs-Z1-9cp">
+                    <rect key="frame" x="10" y="25" width="34" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="30" backgroundImage="Home_Top_min.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.18531428854786827" green="0.49207914751360526" blue="0.66088620580808088" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Home_Top_back.png" width="640" height="88"/>
+        <image name="Home_Top_min.png" width="68" height="68"/>
+        <image name="Home_Top_progress_center_left.png" width="2" height="16"/>
+        <image name="Home_Top_progress_center_right.png" width="2" height="16"/>
+        <image name="Home_Top_progress_left.png" width="6" height="16"/>
+        <image name="Home_Top_progress_right.png" width="6" height="16"/>
+        <image name="Home_info_icon.png" width="112" height="112"/>
+        <image name="Home_list_icon.png" width="112" height="112"/>
+        <image name="Home_mylocation_icon.png" width="112" height="112"/>
+    </resources>
+</document>
